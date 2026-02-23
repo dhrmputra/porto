@@ -1,4 +1,4 @@
-import HeroImage from "./assets/fotocv.png";
+import HeroImage from "./assets/fotocv.webp";
 
 const Image = {
   HeroImage,
@@ -8,15 +8,16 @@ export default Image;
 
 import Tools1 from "./assets/tools/vscode.png";
 import Tools2 from "./assets/tools/reactjs.png";
-import Tools3 from "./assets/tools/nextjs.png";
+import Tools3 from "./assets/tools/laravel.png";
 import Tools4 from "./assets/tools/tailwind.png";
 import Tools5 from "./assets/tools/bootstrap.png";
 import Tools6 from "./assets/tools/js.png";
 import Tools7 from "./assets/tools/nodejs.png";
 import Tools8 from "./assets/tools/github.png";
-import Tools9 from "./assets/tools/ai.png";
+import Tools9 from "./assets/tools/docker.png";
 import Tools10 from "./assets/tools/canva.png";
 import Tools11 from "./assets/tools/figma.png";
+import Tools12 from "./assets/tools/linux.png";
 
 export const listTools = [
   {
@@ -36,7 +37,7 @@ export const listTools = [
   {
     id: 3,
     gambar: Tools3,
-    nama: "Next JS",
+    nama: "Laravel",
     ket: "Framework",
     dad: "300",
   },
@@ -78,8 +79,8 @@ export const listTools = [
   {
     id: 9,
     gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
+    nama: "Docker",
+    ket: "Containerization",
     dad: "900",
   },
   {
@@ -96,22 +97,29 @@ export const listTools = [
     ket: "Design App",
     dad: "1100",
   },
+    {
+    id: 12,
+    gambar: Tools12,
+    nama: "Linux",
+    ket: "Operating System",
+    dad: "1200",
+  },
 ];
 
 import Proyek1 from "./assets/proyek/cacao.png";
-import Proyek2 from "./assets/proyek/cacao1.png";
-import Proyek3 from "./assets/proyek/cacao2.png";
-import Proyek4 from "./assets/proyek/cacao3.png";
-import Proyek5 from "./assets/proyek/cacao4.png";
-import Proyek6 from "./assets/proyek/cacao5.png";
+// import Proyek2 from "./assets/proyek/cacao1.png";
+// import Proyek3 from "./assets/proyek/cacao2.png";
+// import Proyek4 from "./assets/proyek/cacao3.png";
+// import Proyek5 from "./assets/proyek/cacao4.png";
+// import Proyek6 from "./assets/proyek/cacao5.png";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    nama: "Kakao Detection App",
+    desk: "Cocoa Disease Detection App adalah aplikasi Android berbasis deep learning yang dikembangkan dari skripsi saya, menggunakan metode YOLO untuk mendeteksi penyakit pada buah kakao melalui citra gambar. Aplikasi ini dibangun dengan Kotlin dan Java, serta mengintegrasikan model YOLO dalam format TensorFlow Lite untuk menghasilkan deteksi penyakit secara akurat dan efisien di perangkat mobile.",
+    tools: ["YOLO", "Kotlin", "Roboflow", "TensorFlow Lite", "Android Studio"],
     dad: "200",
   }
 //   {

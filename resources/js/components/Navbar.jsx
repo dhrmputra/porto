@@ -9,7 +9,7 @@ export default function Navbar() {
         
         {/* LOGO */}
         <a href="#" className="text-xl font-bold text-zinc-100">
-          My<span className="text-violet-600">Portfolio</span>
+          My<span className="text-emerald-500">Portfolio</span>
         </a>
 
         {/* DESKTOP MENU */}
@@ -37,7 +37,7 @@ export default function Navbar() {
           open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <nav className="flex flex-col gap-4 px-6 pb-6">
+        <nav className="flex flex-col gap-4 px-6 pb-6 font-bold">
           <a onClick={() => setOpen(false)} href="#hero" className="mobile-link">Home</a>
           <a onClick={() => setOpen(false)} href="#about" className="mobile-link">About</a>
           <a onClick={() => setOpen(false)} href="#projects" className="mobile-link">Projects</a>

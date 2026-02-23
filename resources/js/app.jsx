@@ -8,8 +8,7 @@ import { listTools, listProyek } from './data';
 import Footer from './components/footer';
 import 'animate.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 AOS.init();
 
 function App() {
@@ -18,22 +17,23 @@ function App() {
             <Navbar />
             <section
                 id="hero"
-                className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1"
+                className="hero grid md:grid-cols-2 pt-5 items-center xl:gap-0 gap-6 grid-cols-1"
             >
                 {/* LEFT CONTENT */}
                 <div className='animate__animated animate__fadeInUp animate__delay-2s'>
-                    <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+                    <div className="flex items-center gap-3 mb-6 bg-neutral-800 w-fit p-4 rounded-2xl">
+                        <img src={DataImage.HeroImage} alt="tentang" className='w-6 rounded-md' loading='lazy'/>
                         <span className="text-sm font-medium text-white">
                             Code The Chaos
                         </span>
                     </div>
 
                     <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                        <span className="text-zinc-400 flex">Hi, Saya</span>
-                        <span className="text-white">I Made Dharma Putra</span>
+                        <span className="text-emerald-500 flex">Hi, Saya</span>
+                        <span className="text-slate-100 text-4xl lg:text-5xl font-bold mt-4">I Made Dharma Putra</span>
                     </h1>
 
-                    <p className="text-base text-justify lg:text-lg mb-6 opacity-50">
+                    <p className="text-justify lg:text-lg mb-6 opacity-70 text-white">
                         Saya adalah junior programmer dengan minat pada basic pengembangan aplikasi, DevOps, dan
                         cloud computing. Terbiasa bekerja secara mandiri maupun dalam tim, serta mampu beradaptasi
                         dengan lingkungan kerja yang dinamis. Aktif mengembangkan keterampilan teknis melalui proyek,
@@ -42,37 +42,73 @@ function App() {
 
                     <div className="flex items-center gap-4">
                         <a
-                            href="#"
-                            className="flex bg-violet-700 p-4 rounded-2xl text-white hover:bg-violet-600 transition"
+                            href="https://drive.google.com/file/d/159NY3BQRG9Wn3g2ATr1wF28FybgRGwhA/view?usp=sharing"  target="_blank" rel="noopener noreferrer" className="flex bg-emerald-600 p-4 rounded-2xl text-white hover:bg-emerald-500 transition"
                         >
                             Download CV <i className="ri-download-line ri-lg ml-1 my-auto"></i>
                         </a>
                         <a
                             href="#project"
-                            className="flex bg-gray-600 p-4 rounded-2xl text-white hover:bg-gray-500 transition"
+                            className="flex bg-neutral-800 p-4 rounded-2xl text-white hover:bg-neutral-700 transition"
                         >
                             Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-1 my-auto"></i>
                         </a>
                     </div>
                 </div>
 
-                <div className="flex justify-center md:justify-end">
-                    <img
-                        src={DataImage.HeroImage}
-                        alt="fotocv"
+                <div
+                    className="
+    w-full
+    flex
+    justify-center
+    md:justify-center
+    lg:justify-end
+  "
+                >
+
+                    <div
                         className="
-            w-[500px]
-            max-w-md
-            h-120
-            object-contain
-            rounded-2xl
-          "
-                        loading='lazy' />
+      relative
+      flex
+      items-end
+      justify-center
+      mt-5
+
+      lg:ml-auto
+
+      w-[300px]
+      sm:w-[340px]
+      md:w-[380px]
+      lg:w-[420px]
+      xl:w-[460px]
+
+      h-[420px]
+      sm:h-[460px]
+      md:h-[500px]
+      lg:h-[540px]
+      xl:h-[580px]
+
+      bg-gradient-to-b from-emerald-700 to-emerald-800
+      rounded-b-[100px]
+      overflow-hidden
+      shadow-xl
+    ">
+                        <img
+                            src={DataImage.HeroImage}
+                            alt="fotocv"
+                            className="
+        w-full
+        h-full
+        object-contain
+        scale-105
+      "
+                            loading="lazy"
+                        />
+                    </div>
                 </div>
             </section>
 
             <section id="about" className="tentang mt-32 py-10">
-                <div className='xl:w-2/3 mx-auto bg-zinc-800 p-7 rounded-lg' data-aos="fade-up" data-aos-duration="1000">
+                <div className='xl:w-2/3 mx-auto bg-neutral-800 p-7 rounded-lg' data-aos="fade-up" data-aos-duration="1000">
                     <img src={DataImage.HeroImage} alt="tentang" className='w-12 rounded-md mb-10 sm:hidden' loading='lazy' />
                     <p>
                         Saya adalah seorang junior programmer yang memiliki minat besar dalam pengembangan aplikasi, DevOps, dan cloud computing. Saya terbiasa bekerja secara mandiri maupun dalam tim, serta mampu beradaptasi dengan lingkungan kerja yang dinamis. Saya aktif mengembangkan keterampilan teknis melalui proyek, magang, dan pembelajaran mandiri untuk meningkatkan kualitas solusi yang saya bangun.
@@ -82,15 +118,15 @@ function App() {
                         <div className='flex items-center gap-6'>
                             <div>
                                 <h1 className='text-4xl mb-1'>
-                                    45<span className='text-violet-500'>+</span>
+                                    4<span className='text-emerald-500'>+</span>
                                 </h1>
                                 <p>Proyek Selesai</p>
                             </div>
                             <div>
                                 <h1 className='text-4xl mb-1'>
-                                    4<span className='text-violet-500'>+</span>
+                                    1<span className='text-emerald-500'>+</span>
                                 </h1>
-                                <p>Tahun Pengalaman</p>
+                                <p>Tahun Pengalaman Magang</p>
                             </div>
                         </div>
                     </div>
@@ -103,11 +139,11 @@ function App() {
                 <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
 
                     {listTools.map((tool, index) => (
-                        <div className='flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group' key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad}>
-                            <img src={tool.gambar} alt="tools" className='w-14 bg-zinc-600 p-1 group-hover:bg-zinc-900' loading='lazy' />
+                        <div className='flex items-center gap-2 p-3 border border-emerald-600 rounded-md hover:bg-emerald-600 group' key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad}>
+                            <img src={tool.gambar} alt="tools" className='w-14 bg-neutral-700 p-1 group-hover:bg-neutral-900' loading='lazy' />
                             <div>
                                 <h4 className='font-bold'>{tool.nama}</h4>
-                                <p className='opacity-50'>{tool.ket}</p>
+                                <p className='opacity-60'>{tool.ket}</p>
                             </div>
                         </div>
                     ))}
@@ -119,18 +155,18 @@ function App() {
                 <p className="text base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut adalah beberapa proyek yang pernah saya kerjakan, baik itu proyek pribadi maupun proyek kolaborasi dengan tim.</p>
                 <div className='proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4'>
                     {listProyek.map((proyek) => (
-                        <div key={proyek.id} className='p-4 rounded-md bg-zinc-800' data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
-                            <img src={proyek.gambar} alt="proyek image" className='w-full h-48 object-cover rounded-md' loading='lazy' />
+                        <div key={proyek.id} className='p-4 rounded-md bg-neutral-800' data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
+                            <img src={proyek.gambar} alt="proyek image" className='w-full h-50 object-cover rounded-md' loading='lazy' />
                             <div>
                                 <h1 className='font-bold text-2xl my-4'>{proyek.nama}</h1>
-                                <p className='text-base/loose mb-4'>{proyek.desk}</p>
+                                <p className='text-sm/loose mb-4 text-justify'>{proyek.desk}</p>
                                 <div className='flex flex-wrap gap-2'>
                                     {proyek.tools.map((tool, index) => (
-                                        <p key={index} className='border border-zinc-500 bg-zinc-600 px-3 py-1 rounded-md font-semibold'>{tool}</p>
+                                        <p key={index} className='border border-neutral-500 bg-neutral-700 px-3 py-1 rounded-md'>{tool}</p>
                                     ))}
                                 </div>
                                 <div className='mt-8 text-center'>
-                                    <a href='#' className='bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 '>Lihat Project</a>
+                                    <a href='#' className='bg-emerald-600 p-3 rounded-lg block border border-emerald-600 hover:bg-emerald-500 '>Lihat Project</a>
                                 </div>
                             </div>
                         </div>
@@ -141,22 +177,22 @@ function App() {
             <section id="contact" className="kontak mt-32 p-10 sm:p-10 p-0">
                 <h1 className="text-4xl text-center font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Kontak</h1>
                 <p className="text base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Mari terhubung dengan saya.</p>
-                <form action="https://formsubmit.co/dharma.putra2003@gmail.com" method="POST" className="bg-zinc-800 p-10 rounded-md w-fit mx-auto sm:w-fit w-full" autoComplete='off' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <form action="https://formsubmit.co/dharma.putra2003@gmail.com" method="POST" className="bg-neutral-800 p-10 rounded-md w-fit mx-auto sm:w-fit w-full" autoComplete='off' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <div className='flex flex-col gap-6'>
                         <div className='flex flex-col gap-2'>
                             <label className='font-semibold'>Nama Lengkap</label>
-                            <input type="text" name='nama' placeholder='Masukan Nama' className='border border-zinc-500 p-2 rounded-md' required />
+                            <input type="text" name='nama' placeholder='Masukan Nama' className='border border-emerald-500 p-2 rounded-md' required />
                         </div>
                         <div className='flex flex-col gap-2'>
                             <label className='font-semibold'>Email</label>
-                            <input type="email" name='email' placeholder='Masukan Email' className='border border-zinc-500 p-2 rounded-md' required />
+                            <input type="email" name='email' placeholder='Masukan Email' className='border border-emerald-500 p-2 rounded-md' required />
                         </div>
                         <div className='flex flex-col gap-2'>
                             <label htmlFor='pesan' className='font-semibold'>Pesan</label>
-                            <textarea name="pesan" id='pesan' placeholder='Pesan' cols="45" rows="7" className='border border-zinc-500 p-2 rounded-md' required></textarea>
+                            <textarea name="pesan" id='pesan' placeholder='Pesan' cols="45" rows="7" className='border border-emerald-500 p-2 rounded-md' required></textarea>
                         </div>
                         <div className='flex flex-col gap-2 text-center'>
-                            <button type='submit' className='bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600'>Kirim Pesan</button>
+                            <button type='submit' className='bg-emerald-600 p-3 rounded-lg w-full cursor-pointer border border-neutral-600 hover:bg-emerald-500'>Kirim Pesan</button>
                         </div>
                     </div>
                 </form>
