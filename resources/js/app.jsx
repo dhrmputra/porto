@@ -17,7 +17,7 @@ function App() {
             <Navbar />
             <section
                 id="hero"
-                className="hero grid md:grid-cols-2 pt-5 items-center xl:gap-0 gap-6 grid-cols-1"
+                className="hero grid md:grid-cols-2 items-center xl:gap-0 gap-6 grid-cols-1"
             >
                 {/* LEFT CONTENT */}
                 <div className='animate__animated animate__fadeInUp animate__delay-2s'>

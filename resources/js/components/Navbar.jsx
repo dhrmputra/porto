@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 left-0 w-full z-40 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
         
         {/* LOGO */}
         <a href="#" className="text-xl font-bold text-zinc-100">
