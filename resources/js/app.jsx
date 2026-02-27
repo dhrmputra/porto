@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import DataImage from './data';
 import 'remixicon/fonts/remixicon.css';
 import { listTools, listProyek } from './data';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
