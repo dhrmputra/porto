@@ -11,9 +11,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
-function App() {
-    return (
-        <div className="max-w-7xl mx-auto px-4 lg:px-4">
+function App() {        
+    return ( 
+            <div className="max-w-7xl mx-auto px-4 lg:px-4">
             <Navbar />
             <section
                 id="hero"
