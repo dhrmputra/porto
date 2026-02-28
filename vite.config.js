@@ -6,10 +6,14 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.jsx'],
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.jsx'
+            ],
             refresh: true,
         }),
-        react(),stailwindcss(),
+        react(),
+        tailwindcss(), // ✅ FIX DI SINI
     ],
     server: {
         watch: {
@@ -17,6 +21,6 @@ export default defineConfig({
         },
     },
     build: {
-    outDir: "dist"
+        outDir: 'dist'
     }
-});
+})
