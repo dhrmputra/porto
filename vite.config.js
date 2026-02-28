@@ -9,11 +9,14 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.jsx'],
             refresh: true,
         }),
-        tailwindcss(),
+        react(),stailwindcss(),
     ],
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
     },
+    build: {
+    outDir: "dist"
+    }
 });
